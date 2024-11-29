@@ -34,19 +34,24 @@ Além de aumentar as populações de peixes, os recifes artificiais restauram ha
 
 ## 📁 **Estrutura de Pastas**
 ```Markdown
-  📁Images
-     capa.png
-     capaCadastro.png
-     capaLogin.png
-     logo.png
-  📁Screens
-     cadastro.html
-     login.html
-  📁Styles
-     styleCadastro.css
-     styleIndex.css
-     styleLogin.css
-  index.html
+## 📁 **Estrutura de Pastas**
+
+📂 **Images**  
+  - 🖼️ `capa.png`  
+  - 🖼️ `capaCadastro.png`  
+  - 🖼️ `capaLogin.png`  
+  - 🖼️ `logo.png`  
+
+📂 **Screens**  
+  - 📄 `cadastro.html`  
+  - 📄 `login.html`  
+
+📂 **Styles**  
+  - 🎨 `styleCadastro.css`  
+  - 🎨 `styleIndex.css`  
+  - 🎨 `styleLogin.css`  
+
+📄 `index.html`
 ```
 
 ## 📜 **Licença**
