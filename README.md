@@ -1,4 +1,6 @@
-# 🌊 OceanVida - Website de Produção de Recifes Artificiais
+![Logo da Empresa](Images/logo.png)
+
+# OceanVida - Website de Produção de Recifes Artificiais
 ## Projeto de Front-end - ODS14
 
 Bem-vindo ao repositório do **OceanVida**, um projeto front-end dedicado à apresentação e divulgação da empresa fictícia OceanVida.
@@ -30,18 +32,22 @@ Além de aumentar as populações de peixes, os recifes artificiais restauram ha
 - Google Icons
 - Google Fonts
 
-```markdown
 ## 📁 **Estrutura de Pastas**
-📁Images
-  capa.png
-  capaCadastro.png
-  capaLogin.png
-  logo.png
-📁Screens
-  cadastro.tml
-  login.html
-📁Styles
-  styleCadastro.css
-  styleIndex.css
-  styleLogin.css
-index.html
+```Markdown
+  📁Images
+     capa.png
+     capaCadastro.png
+     capaLogin.png
+     logo.png
+  📁Screens
+     cadastro.html
+     login.html
+  📁Styles
+     styleCadastro.css
+     styleIndex.css
+     styleLogin.css
+  index.html
+```
+
+## 📜 **Licença**
+Este projeto é fictício e foi criado apenas para fins de aprendizado e demonstração.
