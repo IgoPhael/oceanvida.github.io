@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Styles/styleCadastro.css"/>
+        <title>OceanVida</title>
+
+        <!-- Fontes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <!-- Cabeçalho -->
+            <div class="containerHeader">
+                <div class="logo">
+                    <img src="../Images/logo.png" class="img">
+                </div>
+                <div class="containerBotoes">
+                    <div class="botoes"> <a href="index.html#scrollHome">Home</a>   </div>
+                    <div class="botoes"> <a href="index.html#scrollSobre">Sobre   </a>   </div>
+                    <div class="botoes"> <a href="index.html#scrollContato">Contato </a>   </div>
+                    <div class="botoes"> <a href="login.html" class="btn">Login   </a>   </div>
+                </div>
+            </div>
+
+            <!-- Bloco Principal -->
+            <div class="containerConteudo">
+                
+                <h1>Cadastro</h1>
+
+                <!-- Bloco Principal de login/cadastro -->
+                <div class="containerCadastro">
+                    <form action="../Screens/login.html">
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Digite um email válido" required>
+
+                        <label for="fullname">Nome Completo</label>
+                        <input type="text" id="fullname" placeholder="Digite seu nome completo">
+
+                        <label for="cpf">CPF: </label>
+                        <input type="number" id="cpf" placeholder="XXX.XXX.XXX-XX" maxlength="14">
+                        
+                        <label for="date">Data de Nascimento: </label>
+                        <input type="date" id="date">
+
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" placeholder="Digite sua senha">
+                        
+                        <label for="password">Repita a senha</label>
+                        <input type="password" id="password" placeholder="Digite sua senha novamente">
+                        
+                        <button type="submit">Entrar</button>
+                        
+                    </form>
+                </div>
+
+                
+            </div>
+            <div class="containerVazio">
+                
+            </div>
+        </div>
+            
+        <!-- Rodapé -->
+        <footer class="footer">
+            <a href="https://igophael.github.io/" target="_blank" rel="noopener noreferrer">Site fictício - Igor de Oliveira Raphael</a>
+        </footer>
+        
+        </div>
+
+    </body>
+</html>

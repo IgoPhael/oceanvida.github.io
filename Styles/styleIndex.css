@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    background-color:rgb(223, 208, 184);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+    .containerHeader{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #DFD0B8;
+        z-index: 1000;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }   
+        .containerLogo{
+            display: flex;
+            flex-wrap: wrap;
+        }
+            .img{
+                width: 80%;
+                height: 80%;
+            }
+        .containerBotoes{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            justify-content: space-around;
+        }
+        .botoes{
+            font-family: "Poppins", sans-serif;
+            font-style: normal;
+            font-size: x-large;
+            color: rgb(60, 91, 111);
+        }
+
+.containerConteudo{
+    display: flex;
+    flex-direction: column;
+
+}   
+    .capa{
+        width: 100%;
+        height: 100%;
+    }
+
+a{
+    color: #3C5B6F;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(21, 52, 72);
+}
+
+
+/* Container geral */
+.containerSobre {
+    display: flex;
+}
+
+.containerBlocos{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0;
+    margin-top: 12%;
+    margin-bottom: 12%;
+}
+  
+/* Bloco 1 (lado esquerdo) */
+.bloco1 {
+    flex: 1 1 60%;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: #153448; 
+    color: #DFD0B8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+  
+.containerBloco2e3 {
+    flex: 1 1 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bloco2, .bloco3 {
+    padding: 10px;
+    border-radius: 25px;
+    background-color: #153448;
+    color: #DFD0B8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bloco3 ul {
+    list-style-type: disc;
+    padding-left: 50px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 32px;
+    color: #DFD0B8;
+    font-family: "Lily Script One", system-ui;
+    font-weight: 100;
+    font-style: normal;
+    margin: 10px;
+}
+
+p, li {
+    font-size: 24px;
+    color: #DFD0B8;
+    font-family: "Poppins", sans-serif;
+    margin: 10px;
+}
+
+.bloco1, .bloco2, .bloco3 {
+    margin-bottom: 15px;
+}
+
+
+/* Estilos para o contato */
+
+.containerContato {
+    display: flex;
+    gap: 60px;
+    flex-direction: column;
+}
+
+.containerTxtContato{
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    margin-bottom: 3%;
+}
+.containerCards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    height: 350px;
+    margin-top: 3%;
+}
+
+.icon {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #153448;
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.material-icons-outlined {
+    font-size: 65px !important;
+    color: #948979;
+}
+
+.title {
+    font-family: 'Lily Script One', cursive;
+    font-size: 32px;
+    color: #3C5B6F;
+}
+
+.info {
+    color: #3C5B6F;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    margin-top: 10%;
+}
+
+.h1Contato {
+    font-family: 'Lily Script One', cursive;
+    font-size: 48px;
+    color: #153448;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+    font-family: "Poppins", sans-serif;
+    color: #3C5B6F;
+}
+
+/* Estilos para a tela de login a partir daqui */
+.itemLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
