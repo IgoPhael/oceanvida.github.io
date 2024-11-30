@@ -57,7 +57,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('../Images/capaLogin.png'); /* Substitua pelo caminho correto da imagem */
+    background-image: url('../Images/capaLogin.png'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -70,7 +70,6 @@ body{
     font-size: 82px;
     color: #DFD0B8;
     text-shadow: 4px 4px 15px #153448;
-    margin-top: 220px;
     
 }
 
@@ -82,7 +81,7 @@ body{
     width: 400px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: #DFD0B8;
-    margin-top: 130px; /* Ajuste para alinhar com o texto da imagem */
+    margin-top: 80px; 
 }
 
 .containerLogin label {
