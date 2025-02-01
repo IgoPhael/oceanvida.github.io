@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../Styles/styleLogin.css"/>
+        <link rel="stylesheet" href="../Styles/styleAdmin.css"/>
         <title>OceanVida</title>
 
         <!-- Fontes -->
@@ -19,7 +19,7 @@
         <div class="container">
 
             <!-- Cabeçalho -->
-            <div class="containerHeader">
+            <header class="containerHeader">
                 <div class="logo">
                     <img src="../Images/logo.png" class="img" alt="Imagem da logo">
                 </div>
@@ -27,32 +27,35 @@
                     <div class="botoes"> <a href="../index.html#scrollHome">Home           </a>   </div>
                     <div class="botoes"> <a href="../index.html#scrollSobre">Sobre         </a>   </div>
                     <div class="botoes"> <a href="../index.html#scrollContato">Contato     </a>   </div>
-                    <div class="botoes"> <a href="../Screens/login.html" class="btn">Login </a>   </div>
                 </div>
-            </div>
+            </header>
 
             <!-- Bloco Principal -->
-            <div class="containerConteudo">
-                
-                <h1>Login</h1>
-
+            <section class="containerConteudo">
+                    
                 <!-- Bloco Principal de login/cadastro -->
-                <div class="containerLogin">
-                    <form action="#">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="Digite um email válido" required>
+                <div class="containerAdmin">
+                    <form action="#" id="signUpForm">
+                        <label for="dateInput">Data de envio:</label>
+                        <input type="date" id="dateInput" name="data" required>
                         
-                        <label for="password">Senha</label>
-                        <input type="password" id="password" placeholder="Digite sua senha" required>
+                        <label for="usernameInput">Nome do Usuário</label>
+                        <input type="text" id="usernameInput" required>
                         
-                        <button type="submit">Entrar</button>
-
-                        <div class="containerBtn">
-                            <a href="../Screens/cadastro.html" class="btn">Não possui conta? Clique aqui</a>
-                        </div>
+                        <label for="emailInput">Email: </label>
+                        <input type="email" id="emailInput" required>
+                        
+                        <button type="submit">Cadastrar</button>
                     </form>
-                </div> 
-            </div>
+                </div>
+
+                <div class="containerCadastros">
+                    <div class="containerLista">
+                        <ul id="signUpList"></ul>  
+                    </div> 
+                    <button id="delete-all-button" class="btnDeleteAll">Excluir todos</button>
+                </div>
+            </section>
         </div>
             
         <!-- Rodapé -->
@@ -61,4 +64,6 @@
         </footer>
 
     </body>
+
+    <script src="../Scripts/scriptAdmin.js"></script>
 </html>

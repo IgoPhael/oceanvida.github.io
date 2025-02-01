@@ -1,10 +1,7 @@
 ![Logo da Empresa](Images/logo.png)
 
 # Website de Produção de Recifes Artificiais
-
-## Projeto de Front-end
-
-## **ODS 14 - Conservação e uso sustentável dos oceanos, dos mares e dos recursos marinhos para o desenvolvimento sustentável**
+## Projeto de Front-end - ODS 14
 
 Bem-vindo ao repositório do **OceanVida**, um projeto front-end dedicado à apresentação e divulgação da empresa fictícia OceanVida.
 
