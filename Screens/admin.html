@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Styles/styleAdmin.css"/>
+        <title>OceanVida</title>
+
+        <!-- Fontes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+        
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <!-- Cabeçalho -->
+            <header class="containerHeader">
+                <div class="logo">
+                    <img src="../Images/logo.png" class="img" alt="Imagem da logo">
+                </div>
+                <div class="containerBotoes">
+                    <div class="botoes"> <a href="../index.html#scrollHome">Home           </a>   </div>
+                    <div class="botoes"> <a href="../index.html#scrollSobre">Sobre         </a>   </div>
+                    <div class="botoes"> <a href="../index.html#scrollContato">Contato     </a>   </div>
+                </div>
+            </header>
+
+            <!-- Bloco Principal -->
+            <section class="containerConteudo">
+                    
+                <!-- Bloco Principal de login/cadastro -->
+                <div class="containerAdmin">
+                    <form action="#" id="signUpForm">
+                        <label for="dateInput">Data de envio:</label>
+                        <input type="date" id="dateInput" name="data" required>
+                        
+                        <label for="usernameInput">Nome do Usuário</label>
+                        <input type="text" id="usernameInput" required>
+                        
+                        <label for="emailInput">Email: </label>
+                        <input type="email" id="emailInput" required>
+                        
+                        <button type="submit">Cadastrar</button>
+                    </form>
+                </div>
+
+                <div class="containerCadastros">
+                    <div class="containerLista">
+                        <ul id="signUpList"></ul>  
+                    </div> 
+                    <button id="delete-all-button" class="btnDeleteAll">Excluir todos</button>
+                </div>
+            </section>
+        </div>
+            
+        <!-- Rodapé -->
+        <footer class="footer">
+            <a href="https://igophael.github.io/" target="_blank" rel="noopener noreferrer">Site fictício - Igor de Oliveira Raphael</a>
+        </footer>
+
+    </body>
+
+    <script src="../Scripts/scriptAdmin.js"></script>
+</html>

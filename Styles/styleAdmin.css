@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color:rgb(223, 208, 184);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+    .containerHeader{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #DFD0B8;
+        z-index: 1000;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }   
+        .containerLogo{
+            display: flex;
+            flex-wrap: wrap;
+        }
+            .img{
+                width: 80%;
+                height: 80%;
+            }
+        .containerBotoes{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            justify-content: space-around;
+        }
+        .botoes{
+            font-family: "Poppins", sans-serif;
+            font-style: normal;
+            font-size: x-large;
+            color: rgb(60, 91, 111);
+        }
+
+.containerConteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../Images/capaAdmin.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+    /* Estilização do logo */
+    .containerTitulo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .containerConteudo h1 {
+        font-family: "Lily Script One", system-ui;
+        font-size: 82px;
+        color: #DFD0B8;
+        text-shadow: 4px 4px 15px #153448;
+    }
+
+/* Caixa de login */
+.containerAdmin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #153448;
+    padding: 30px;
+    border-radius: 25px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #DFD0B8;
+    margin-top: 80px; 
+}
+    .containerAdmin label {
+        display: block;
+        text-align: left;
+        font-size: 20px;
+        margin-bottom: 5px;
+        color: #DFD0B8;
+        font-family: "Poppins", sans-serif;
+    }
+    .containerAdmin input {
+        width: 95%;
+        padding: 10px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        background-color: #DFD0B8;
+        border:#948979;
+        color: #153448;
+        font-size: 16px;
+        font-family: "Poppins", sans-serif;
+    }
+    .containerAdmin input:focus {
+        outline: auto;
+        box-shadow: 0 0 5px #3C5B6F;
+        font-family: "Poppins", sans-serif;
+    }
+    .containerAdmin button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #DFD0B8;
+        color: #153448;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    .containerAdmin button:hover {
+        background-color: #3C5B6F;
+        color: #DFD0B8;
+    }
+    .containerAdmin a{
+        color: #DFD0B8;
+    }
+    .containerAdmin a:hover{
+        color: #948979;
+    }
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+    font-family: "Poppins", sans-serif;
+    color: #3C5B6F;
+}
+
+.containerBtn{
+    margin: 1%;
+}
+
+a{
+    color: #3C5B6F;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(21, 52, 72);
+}
+
+
+/* - Estilos para a lista de cadastros - */
+
+.containerCadastros {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-self: start;
+    background-color: #153448;
+    padding: 30px;
+    border-radius: 25px;
+    width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 80px;
+}
+
+.containerLista {
+    width: 600px;
+    max-height: 100px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+    padding-right: 25px;
+}
+
+.delete-button {
+    float: right;
+    padding: 2px 5px;
+    border-radius: 25px;
+    background-color: #f44336;
+    color: white;
+    cursor: pointer;
+  }
+  .delete-button:hover {
+    background-color: #d32f2f;
+  }
+
+ul {
+    background-color: #DFD0B8;
+    border-radius: 5px;
+    margin: 15px;
+    color: #153448;
+    width: 100%;
+}
+li {
+    padding: 10px;
+}
+
+.btnDeleteAll{
+    padding: 2px 5px;
+    width:  100px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: #f44336;
+    color: white;
+    margin-top: 15px;
+}
+
