@@ -33,18 +33,36 @@ function getSignUpList() {
 }
 
 // Função para renderizar a lista de cadastros no HTML
-function renderSignUpList() {
+function renderSignUpList(filteredList = null) {
     
     const signUpListElement = document.getElementById("signUpList");
     signUpListElement.innerHTML = "";
 
-    signUpList.forEach(function (signup) {
+    const listToRender = filteredList || signUpList;
+
+    listToRender.forEach(function (signup) {
         
         const listItem = document.createElement("li");
         listItem.innerHTML = 
             '<span class="description">' + signup.date +'  |  ' + signup.username + '  |  ' + signup.email + '</span> <button class="delete-button" onclick="deleteSignUp('+ signup.id +')">X</button>';
         signUpListElement.appendChild(listItem);
     });
+}
+
+// Função para limpar os campos do formulário
+function clearForm() {
+    document.getElementById('dateInput').value = '';
+    document.getElementById('usernameInput').value = '';
+    document.getElementById('emailInput').value = '';
+}
+
+// Função para pesquisar cadastros por nome de usuário
+function searchByUser() {
+    const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+    const filteredList = signUpList.filter(function(signup) {
+        return signup.username.toLowerCase().includes(searchTerm);
+    });
+    renderSignUpList(filteredList);
 }
 
 
@@ -68,11 +86,24 @@ document.getElementById('signUpForm').addEventListener('submit', function (event
 });
 
 
-// Adiciona um event listener para o clique no botão de excluir todos
+// Event listener para o clique no botão de excluir todos
 document.getElementById('delete-all-button').addEventListener('click', function(event) {
 
     event.preventDefault();
     signUpList = [];
     localStorage.removeItem('signUpList');
     renderSignUpList();
+});
+
+
+// Event listener para o clique no botão de limpar
+document.querySelector('.containerButtons button[type="button"]').addEventListener('click', function(event) {
+    event.preventDefault();
+    clearForm();
+});
+
+
+// Event listener para o campo de pesquisa
+document.getElementById('searchInput').addEventListener('input', function(event) {
+    searchByUser();
 });

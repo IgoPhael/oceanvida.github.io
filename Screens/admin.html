@@ -45,11 +45,18 @@
                         <label for="emailInput">Email: </label>
                         <input type="email" id="emailInput" required>
                         
-                        <button type="submit">Cadastrar</button>
+                        <div class="containerButtons">
+                            <button type="submit" class="botoesCadastro">Cadastrar</button>
+                            <button type="button" class="botoesCadastro">Limpar</button>
+                        </div>
+
                     </form>
                 </div>
 
                 <div class="containerCadastros">
+                    <div class="containerPesquisa">
+                        <input type="text" id="searchInput" class="inputPesquisa" placeholder="Pesquisar por nome...">
+                    </div>
                     <div class="containerLista">
                         <ul id="signUpList"></ul>  
                     </div> 
