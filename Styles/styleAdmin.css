@@ -53,15 +53,15 @@ body{
 
 .containerConteudo{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
     height: 100vh;
-    background-image: url('../Images/capaAdmin.jpg'); 
+    background-image: url('../Images/capaAdmin.png'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
+    
 }
 
     /* Estilização do logo */
@@ -183,7 +183,7 @@ a:hover{
 
 .containerLista {
     width: 600px;
-    max-height: 100px;
+    max-height: 300px;
     overflow-x: hidden;
     overflow-y: scroll;
     scrollbar-width: none; 
