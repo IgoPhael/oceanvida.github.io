@@ -42,10 +42,15 @@ Além de aumentar as populações de peixes, os recifes artificiais restauram ha
   - 🖼️ logo.png  
 
 📂 Screens
+  - 📄 admin.html
   - 📄 cadastro.html  
   - 📄 login.html  
 
-📂 Styles 
+📂 Scripts
+  - 📜 scriptAdmin.js
+
+📂 Styles
+  - 🎨 styleAdmin.css
   - 🎨 styleCadastro.css  
   - 🎨 styleIndex.css  
   - 🎨 styleLogin.css  
@@ -63,7 +68,7 @@ Além de aumentar as populações de peixes, os recifes artificiais restauram ha
 3. Explore as páginas de login e cadastro através da navegação.
 
 ## 🌊 **Créditos**
-- Imagem de recifes: 
+- Imagens utilizadas: 
     - [Unsplash](https://unsplash.com/pt-br)
     - [Pexels](https://www.pexels.com/pt-br/)  
 
